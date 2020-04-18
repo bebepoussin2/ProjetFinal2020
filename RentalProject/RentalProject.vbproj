@@ -107,6 +107,18 @@
       <DependentUpon>MainForm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AppBundle\UserControls\IHome.Designer.vb">
+      <DependentUpon>IHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\IHome.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\IInventory.Designer.vb">
+      <DependentUpon>IInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\IInventory.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -126,6 +138,12 @@
   <ItemGroup>
     <EmbeddedResource Include="AppBundle\MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppBundle\UserControls\IHome.resx">
+      <DependentUpon>IHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppBundle\UserControls\IInventory.resx">
+      <DependentUpon>IInventory.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -158,7 +176,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AppBundle\Model\" />
-    <Folder Include="AppBundle\UserControls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

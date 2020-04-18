@@ -5,9 +5,12 @@
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
+        Dim home As New IHome()
+        InterfacePanel.Controls.Add(home)
+        home.BringToFront()
     End Sub
 
-    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
+    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click, CloseButton.Click
         If MessageBox.Show("Voulez-vous quitter le programme ?", "Attention", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
             Me.Close()
         End If
@@ -50,4 +53,7 @@
         End If
     End Sub
 
+    Private Sub InventoryButton_Click(sender As Object, e As EventArgs) Handles InventoryButton.Click
+
+    End Sub
 End Class
